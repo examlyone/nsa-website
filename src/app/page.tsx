@@ -8,6 +8,7 @@ import Partner from "@/components/Common/partner";
 import ContentPartner from "@/components/Common/ContentPartner";
 import Introduction from "@/components/Common/introduction";
 import InstitutionalPartner from "@/components/Common/InstitutionalPartner";
+import SuccessStories from "@/components/Common/SuccessStories";
 export default function Home() {
   return (
     <>
@@ -15,11 +16,13 @@ export default function Home() {
    <Partner/>
    <CpaHero/>
    <CPASection/>
-   <LMSSection/>
-   <PlacementSection/>
-   {/* <ContentPartner/> */}
    <Introduction/>  
    <InstitutionalPartner/>
+   <SuccessStories/>
+   <PlacementSection/>
+   <LMSSection/>
+
+   {/* <ContentPartner/> */}
     </>
   );
 }

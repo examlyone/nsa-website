@@ -51,24 +51,30 @@ const programs = [
     features: ["CPA", "Add on Model"],
   },
 ];
-
 export default function ProgramCarousel() {
   return (
     <section className="container mx-auto py-8 px-4 bg-white">
+      <div className="text-center mb-6 px-4">
+        <h2 className="text-xl md:text-3xl font-bold text-center mb-2">
+          Institutional  <span className=" font-bold bg-gradient-to-r from-[#EC2027] to-[#861216] text-transparent bg-clip-text">Partnership</span>
+          </h2>
+          <p className="text-[#000000] text-sm md:text-base leading-relaxed">
+        Collaborating with leading institutions to empower future professionals
+          </p>
+      </div>
       <div className="max-w-5xl mx-auto px-4 relative">
          <div className="swiper-button-prev !text-red-600 !w-10 !h-10 !-left-8"><BsChevronLeft /></div>
         <div className="swiper-button-next !text-red-600 !w-10 !h-10 !-right-8"><BsChevronRight /></div>
-
         <Swiper
           modules={[Navigation, Pagination]}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          pagination={{
-            el: ".swiper-pagination",
-            clickable: true,
-          }}
+          // pagination={{
+          //   el: ".swiper-pagination",
+          //   clickable: true,
+          // }}
           spaceBetween={20}
           slidesPerView={3}
           breakpoints={{
@@ -77,8 +83,8 @@ export default function ProgramCarousel() {
             1024: { slidesPerView: 3 },
           }}
         >
-          {programs.map((program) => (
-            <SwiperSlide key={program.id}>
+          {programs.map((program,index) => (
+            <SwiperSlide key={index}>
               <div className="border border-[#848484] rounded-lg shadow-sm bg-white flex flex-col h-full px-3 py-2">
                 <div className="w-full h-40 relative rounded-lg overflow-hidden">
                   <Image
@@ -119,7 +125,7 @@ export default function ProgramCarousel() {
           ))}
         </Swiper>
       </div>
-      <div className="swiper-pagination mt-4 flex gap-1 justify-center right-1 !w-full">asdSDAS</div>
+      {/* <div className="swiper-pagination mt-8 flex gap-1 justify-center right-1 !w-full"></div> */}
     </section>
   );
 }

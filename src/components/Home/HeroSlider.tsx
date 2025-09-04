@@ -22,10 +22,11 @@ export default function HeroSlider() {
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
-          pagination={{
-            clickable: true,
-            el: ".custom-pagination",
-          }}
+          // pagination={{
+          //   clickable: true,
+          //   el: ".custom-pagination",
+          //   dynamicBullets: true,
+          // }}
           // autoplay={{ delay: 3000 }}
           loop={true}
           slidesPerView={1}
@@ -54,14 +55,11 @@ export default function HeroSlider() {
           <button className="custom-prev absolute top-1/2 left-1 transform -translate-y-1/2 p-2 rounded-full shadow hover:bg-gray-100 z-10">
             <BsChevronLeft className="text-red-600 w-8 h-8" />
           </button>
-
           <button className="custom-next absolute top-1/2 right-4 transform -translate-y-1/2  p-2 rounded-full shadow hover:bg-gray-100 z-10">
             <BsChevronRight className="text-red-600 w-8 h-8" />
           </button>
         </Swiper>
-
-        {/* Pagination dots below */}
-        <div className="custom-pagination flex justify-center gap-2 mt-4"></div>
+        {/* <div className="custom-pagination flex justify-center gap-2 mt-2"></div> */}
       </div>
     </section>
   );

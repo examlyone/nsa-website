@@ -4,7 +4,7 @@ import { Typography } from "./Typography";
 
 export default function LMSSection() {
   return (
-    <section className="container mx-auto bg-white py-10 px-4 md:px-8">
+    <section className="container mx-auto bg-white py-10 px-4 md:px-8 md:mt-12">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10"> 
         <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
           <Typography variant="h2" className="text-xl sm:text-2xl lg:text-3xl font-bold leading-snug mb-4">
@@ -22,14 +22,14 @@ export default function LMSSection() {
 
         </div>
 
-        <div className="w-full md:w-1/2 relative flex justify-center items-center">
+        <div className="w-full md:w-1/2 relative flex justify-end ">
           <Image
             src="/images/laptop.png"
             alt="Laptop"
             width={600}
             height={600}
             sizes="100vw"
-            className="object-contain w-[85%] sm:w-[70%] md:w-[85%] lg:w-[85%]"
+            className="object-contain rounded-lg w-full h-auto max-w-[550px] md:max-w-[550px] self-end"
             priority
           />
           <div className="absolute top-[20%] left-1/2 -translate-x-1/2">

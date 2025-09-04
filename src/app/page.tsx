@@ -9,6 +9,8 @@ import ContentPartner from "@/components/Common/ContentPartner";
 import Introduction from "@/components/Common/introduction";
 import InstitutionalPartner from "@/components/Common/InstitutionalPartner";
 import SuccessStories from "@/components/Common/SuccessStories";
+import FAQ from "@/components/Common/faq";
+import ButtonGrid from "@/components/Common/ButtonGrid";
 export default function Home() {
   return (
     <>
@@ -19,9 +21,10 @@ export default function Home() {
    <Introduction/>  
    <InstitutionalPartner/>
    <SuccessStories/>
+   <FAQ/>
    <PlacementSection/>
    <LMSSection/>
-
+   <ButtonGrid/>    
    {/* <ContentPartner/> */}
     </>
   );

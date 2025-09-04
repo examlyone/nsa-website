@@ -4,10 +4,10 @@ export default function CPASection() {
   return (
     <section className="container mx-auto md:mt-12 mt-8 md:px-8 px-4">
       <div className="mb-6">
-          <h2 className="text-xl md:text-3xl font-bold">
+          <h2 className="text-xl md:text-3xl font-bold text-center md:text-left">
           Choose your <span className=" font-bold bg-gradient-to-r from-[#EC2027] to-[#861216] text-transparent bg-clip-text">Next Big Step</span>
           </h2>
-          <div  className="flex flex-row gap-4 mt-6">
+          <div  className="flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-4 mt-6">
           <button className="bg-[#EC2027] hover:bg-red-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105">Finance & Accounting</button>
           <button className="bg-gray-200 hover:bg-red-600 text-black px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105">Investment Banking</button>
           <button className="bg-gray-200 hover:bg-red-600 text-black px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105">Auditing & Taxation</button>
@@ -15,7 +15,7 @@ export default function CPASection() {
           </div>
           </div>
       <div className="flex flex-row flex-wrap items-center gap-8">
-        <div className="flex-1 min-w-[300px] space-y-4">
+        <div className="flex-1 min-w-[300px] space-y-4 md:flex-nowrap">
           <h2 className="text-xl md:text-3xl font-bold bg-gradient-to-r from-[#EC2027] to-[#861216] text-transparent bg-clip-text">
             Certified Public Accountant
           </h2>

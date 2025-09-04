@@ -7,6 +7,7 @@ import PlacementSection from "@/components/Common/PlacementReport";
 import Partner from "@/components/Common/partner";
 import ContentPartner from "@/components/Common/ContentPartner";
 import Introduction from "@/components/Common/introduction";
+import InstitutionalPartner from "@/components/Common/InstitutionalPartner";
 export default function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Home() {
    <PlacementSection/>
    {/* <ContentPartner/> */}
    <Introduction/>  
+   <InstitutionalPartner/>
     </>
   );
 }

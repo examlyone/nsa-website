@@ -31,29 +31,33 @@ export default function PlacementPartners() {
       </div>
 
       <div className="space-y-6">
-        {/* Row 1 */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex animate-marquee4 gap-3">
-            {renderLogos(logosRow1)}
-            {renderLogos(logosRow1)}
-          </div>
-        </div>
+  <div className="relative w-full overflow-hidden">
+    <div className="pointer-events-none absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-white to-transparent z-10" />
+    <div className="pointer-events-none absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-white to-transparent z-10" />
 
-        {/* Row 2 */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex animate-marquee-reverse4 gap-3">
-            {renderLogos(logosRow2)}
-            {renderLogos(logosRow2)}
-          </div>
-        </div>
+    <div className="flex animate-marquee4 gap-3">
+      {renderLogos(logosRow1)}
+      {renderLogos(logosRow1)}
+    </div>
+  </div>
 
-        {/* Button */}
-        <div className="flex justify-center mt-7">
-          <button className="px-4 py-2 bg-red-600 text-white rounded-full text-xs sm:text-sm md:text-base shadow-md hover:bg-red-700 flex items-center gap-2 mx-auto">
-            Download Placement Report <PiDownloadSimple size={20} />
-          </button>
-        </div>
-      </div>
+  <div className="relative w-full overflow-hidden">
+    <div className="pointer-events-none absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-white to-transparent z-10" />
+    <div className="pointer-events-none absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-white to-transparent z-10" />
+
+    <div className="flex animate-marquee-reverse4 gap-3">
+      {renderLogos(logosRow2)}
+      {renderLogos(logosRow2)}
+    </div>
+  </div>
+
+    <div className="flex justify-center mt-7">
+    <button className="px-4 py-2 bg-red-600 text-white rounded-full text-xs sm:text-sm md:text-base shadow-md hover:bg-red-700 flex items-center gap-2 mx-auto">
+      Download Placement Report <PiDownloadSimple size={20} />
+    </button>
+  </div>
+</div>
+
     </section>
   );
 }

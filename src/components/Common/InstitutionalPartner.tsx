@@ -86,7 +86,7 @@ export default function ProgramCarousel() {
           {programs.map((program,index) => (
             <SwiperSlide key={index}>
               <div className="border border-[#848484] rounded-lg shadow-sm bg-white flex flex-col h-full px-3 py-2">
-                <div className="w-full h-40 relative rounded-lg overflow-hidden">
+                <div className="w-full h-45 relative rounded-lg overflow-hidden">
                   <Image
                     src={program.img}
                     alt={program.title}

@@ -11,6 +11,8 @@ import InstitutionalPartner from "@/components/Common/InstitutionalPartner";
 import SuccessStories from "@/components/Common/SuccessStories";
 import FAQ from "@/components/Common/faq";
 import ButtonGrid from "@/components/Common/ButtonGrid";
+import BenefitsSection from "@/components/Common/benefits";
+import ImageScroll from "@/components/Common/ImageScroll";
 export default function Home() {
   return (
     <>
@@ -18,9 +20,12 @@ export default function Home() {
    <Partner/>
    <CpaHero/>
    <CPASection/>
+   <ContentPartner/>
    <Introduction/>  
    <InstitutionalPartner/>
    <SuccessStories/>
+   <ImageScroll/>
+   <BenefitsSection/>
    <FAQ/>
    <PlacementSection/>
    <LMSSection/>

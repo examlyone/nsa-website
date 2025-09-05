@@ -57,7 +57,7 @@ const stories = [
     id: 6,
     type: "text",
     content:
-      "I am thrilled to share that I have cleared all levels of CMA in my first attempt with excellent guidance.I am thrilled to share that I have cleared all levels of CMA in my first attempt with excellent guidance.",
+      "I am thrilled to share that I have cleared all levels of CMA in my first attempt with excellent guidance.",
     avatar: "/images/success-logo.jpg",
     name: "Nidhi Varsh",
     role: "CMA Candidate",
@@ -77,7 +77,7 @@ const stories = [
     id: 8,
     type: "text",
     content:
-      "My decision to join CPA coaching was the best career investment. I’m now working with EY as a Tax Consultant.My decision to join CPA coaching was the best career investment. I’m now working with EY as a Tax Consultant.",
+      "My decision to join CPA coaching was the best career investment. I’m now working with EY as a Tax Consultant.",
     avatar: "/images/success-logo.jpg",
     name: "Kaustav Sen",
     role: "Tax Consultant, EY",
@@ -139,13 +139,13 @@ export default function SuccessStories() {
             ) : (
               <div className="relative">
                 <motion.div>
-                  <Image
+                  {/* <Image
                     src={""}
                     alt={story.name}
                     width={400}
                     height={150}
                     className="rounded-lg object-cover w-full h-48"
-                  />
+                  /> */}
                 </motion.div>
                 {/* <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-lg">
                   <svg

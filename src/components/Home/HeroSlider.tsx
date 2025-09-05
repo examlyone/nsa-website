@@ -22,12 +22,6 @@ export default function HeroSlider() {
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
-          // pagination={{
-          //   clickable: true,
-          //   el: ".custom-pagination",
-          //   dynamicBullets: true,
-          // }}
-          // autoplay={{ delay: 3000 }}
           loop={true}
           slidesPerView={1}
           className="w-full h-[400px] overflow-hidden rounded-lg shadow relative"
@@ -38,9 +32,7 @@ export default function HeroSlider() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex justify-center items-center w-full h-[400px] bg-gray-200 object-fit">
               <HeroSection3 />
-            </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex justify-center items-center w-full h-[400px] bg-gray-200">

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection3() {
   return (
-    <section className="container mx-auto px-4 sm:px-6 md:px-14 lg:px-20 py-8 sm:py-12 lg:py-16 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+    <section className="container  px-4 sm:px-6 md:px-14 lg:px-20 py-8 sm:py-12 lg:py-1 flex flex-col md:flex-row items-center gap-8 md:gap-12">
       
       {/* Left Content */}
       <div className="w-full md:w-1/2 text-center md:text-left">

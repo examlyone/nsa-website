@@ -60,13 +60,13 @@ const CircleImage = () => (
   <div className="flex flex-col items-center">
     <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full overflow-hidden shadow-md bg-white">
       <img
-        src="/images/profile.png"
+        src="/PlacementImg/img-1.png"
         alt="profile"
         className="w-full h-full object-cover"
       />
     </div>
-    <span className="mt-1 px-2 py-0.5 bg-white border rounded-full text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-semibold text-red-600 shadow">
+    {/* <span className="mt-1 px-2 py-0.5 bg-white border rounded-full text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-semibold text-red-600 shadow">
       DUPONT
-    </span>
+    </span> */}
   </div>
 );

@@ -24,4 +24,12 @@ export const logosRow1 = [
     "images/image 11.png",
     "images/image 13.png",
   ];
-  
+  export const AboutusLogo=[
+    "/About-Images/acca-logo.png",
+    "/About-Images/becker-logo.png",
+    "/About-Images/bpp.png",
+    "/About-Images/gleim-logo.png",
+    "/About-Images/ima-logo.png",
+    "/About-Images/kaplan-logo.png",
+    "/About-Images/wiley-logo.png"
+  ]

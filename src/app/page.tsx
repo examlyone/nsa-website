@@ -13,6 +13,8 @@ import FAQ from "@/components/Common/faq";
 import ButtonGrid from "@/components/Common/ButtonGrid";
 import BenefitsSection from "@/components/Common/benefits";
 import ImageScroll from "@/components/Common/ImageScroll";
+import NeedAssistance from "@/components/Common/NeedAssistance";
+import ChatAssistant from "@/components/Common/ChatAssistance";
 export default function Home() {
   return (
     <>
@@ -30,7 +32,8 @@ export default function Home() {
    <PlacementSection/>
    <LMSSection/>
    <ButtonGrid/>    
-   {/* <ContentPartner/> */}
+   <NeedAssistance/>
+   <ChatAssistant/>
     </>
   );
 }

@@ -33,7 +33,7 @@ export default function Introduction() {
 </div>
         <div className="md:w-1/2 flex justify-center md:justify-end md:-mt-10 lg:-mt-12">
           <img
-            src="/images/hero-img.png"
+            src="/images/hero-img1.png"
             alt="M.Irfat"
             className="w-45 h-65 md:h-65 md:w-65 lg:w-68 lg:h-83 rounded-lg object-top"
           />

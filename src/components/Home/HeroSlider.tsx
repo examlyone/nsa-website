@@ -13,7 +13,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 export default function HeroSlider() {
   return (
-    <section className="container mx-auto px-4 py-6">
+    <section className="container mx-auto px-4 py-6 lg:mt-5">
       <div className="relative mx-auto w-full h-[400px] overflow-hidden rounded-lg shadow ">
         {/* Swiper */}
         <Swiper

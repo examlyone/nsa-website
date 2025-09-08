@@ -15,7 +15,7 @@ export default function CPASection() {
           </h2>
           <div  className="flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-3 mt-6">
           <button className="bg-[#EC2027] hover:bg-red-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105">Finance & Accounting</button>
-          <button className="bg-gray-200 hover:bg-gray-[#a9a9a9] text-black px-6 py-2 rounded-md font-medium transition-all duration-300  hover:shadow-gray-500/25 transform hover:scale-105">Investment Banking</button>
+          <button className="bg-gray-200 hover:bg-red-600 text-black px-6 py-2 rounded-md font-medium transition-all duration-300  hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105">Investment Banking</button>
           <button className="bg-gray-200 hover:bg-red-600 text-black px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105">Auditing & Taxation</button>
           <button className="bg-gray-200 hover:bg-red-600 text-black px-6 py-2 rounded-md font-medium transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25 transform hover:scale-105">Executive Programs</button>
           </div>

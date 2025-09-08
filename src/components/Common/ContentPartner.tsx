@@ -13,12 +13,12 @@ export default function ContentPartnersSection() {
             alt="Content Partners"
             width={500}
             height={500}
-            className="object-contain lg:block hidden xl:scale-100 scale-[1.5] relative top-12 -left-24 xl:top-0 xl:left-0"
+            className="object-contain md: bolck lg:block hidden xl:scale-100 scale-[1.5] relative top-12 -left-24 xl:top-0 xl:left-0"
           />
         </div>
 
         {/* Right - Text */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left space-y-4 h-full md:px-8 md:py-5 px-4 py-3">
+        <div className="w-full lg:w-1/2 md:w-full flex flex-col justify-center text-center md:text-left space-y-4 h-full md:px-8 md:py-5 px-4 py-3">
           <Typography
             variant="h2"
             className="text-sm sm:text-xl md:text-2xl lg:text-4xl font-semibold leading-snug"

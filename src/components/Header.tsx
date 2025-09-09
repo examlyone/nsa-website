@@ -8,7 +8,6 @@ import { navLinks } from "@/data/navlink.data";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
- const courses=['CMA','ACCA','CPA','EA']
     return (
         <header className="bg-white shadow">
             <div className="container mx-auto flex items-center justify-between p-4">

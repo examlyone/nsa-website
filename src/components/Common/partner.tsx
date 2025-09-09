@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { logosRow1, logosRow2 } from "@/data/partnerData";
 import { PiDownloadSimple } from "react-icons/pi";
 

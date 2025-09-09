@@ -12,7 +12,7 @@ export default function LMSSection() {
             <span className="text-red-600">Mobile & Laptop LMS App</span>
           </Typography>
           <Typography variant="body1" className="text-gray-600 mt-1 text-xs sm:text-sm md:text-base lg:text-md text-justify">
-            NorthStar Academy's online training programs offer a unique, enjoyable learning
+            NorthStar Academy &apos;s online training programs offer a unique, enjoyable learning
             experience. Our virtual classes allow you to learn from the comfort of your own home. 
             Our approach to learning will help you acquire skills faster than traditional methods.
           </Typography>

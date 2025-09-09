@@ -3,7 +3,6 @@
 import { FaUserTie } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
 import { GiBookshelf } from "react-icons/gi";
-import { section } from "framer-motion/client";
 
 const benefits = [
   {

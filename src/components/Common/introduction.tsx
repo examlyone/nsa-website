@@ -18,7 +18,7 @@ export default function Introduction() {
   <div className="flex flex-col md:flex-row justify-center items-end gap-8">
     <div className="flex flex-col">
       <h3 className="text-[#FFD45D] font-semibold text-lg md:text-xl">M.Irfat</h3>
-      <p className="text-sm md:text-base sm:text-xs xs:text-xs text-white">India's leading expert</p>
+      <p className="text-sm md:text-base sm:text-xs xs:text-xs text-white">India &apos;s leading expert</p>
       <span className="text-sm md:text-base font-normal  whitespace-nowrap text-[#FFD45D]">CA - CMA USA - CPA - CIMA UK</span>
     </div>
 

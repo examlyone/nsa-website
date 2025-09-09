@@ -1,73 +1,72 @@
-import React from 'react'
-import { Typography } from '../Common/Typography'
-
-export default function WebinarFree(){
+'use client';
+export default function ContactForm() {
   return (
-    <section className='container mx-auto px-4 py-10'>
-        <div className='flex flex-row'>
-        <div className="w-full lg:w-1/2 md:w-full flex flex-col justify-center text-center md:text-left space-y-4 h-full md:px-8 md:py-5 px-4 py-3">
-                  <Typography
-                    variant="h2"
-                    className="text-sm sm:text-xl md:text-2xl lg:text-4xl font-semibold leading-snug"
-                  >
-                    Ready to <br /> Begin Your Journey?
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed text-justify"
-                  >
-                    Get in touch with us today and take the first step towards your future success. Our team is here to assist you!
-                  </Typography>
-                </div>
-    <div className='w-1/2 border border-gary-400 shadow-lg rounded-lg p-4'>
-       <form className="space-y-3">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full border border-gray-300 rounded px-4 py-2 text-sm"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full border border-gray-300 rounded px-4 py-2 text-sm"
-              />
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <select className="border border-gray-300 rounded px-4 py-2 w-full text-sm">
-                  <option>Select Course</option>
-                  <option>CMA</option>
-                  <option>CPA</option>
-                </select>
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  className="border border-gray-300 rounded px-4 py-2 w-full text-sm"
-                />
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <select className="border border-gray-300 rounded px-4 py-2 w-full text-sm">
-                  <option>Choose Type</option>
-                  <option>Student</option>
-                  <option>Professional</option>
-                </select>
-                <input
-                  type="text"
-                  placeholder="Your City Name"
-                  className="border border-gray-300 rounded px-4 py-2 w-full text-sm"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-[#d41c1c] text-white font-semibold py-2 rounded mt-2 hover:bg-red-700 transition text-sm"
-              >
-                Request for Call Support
-              </button>
-              <p className="text-xs text-gray-500 text-center mt-2">
-                By submitting, you authorize us to contact you by call or text.
-              </p>
-            </form>
-    </div>
-    </div>
-    </section>
-  )
-}
+    <section className="conatiner mx-auto bg-white  md:p-6 md:flex">
+      <div className="md:w-1/2 w-full p-4 lg:mt-4">
+        <h2 className="text-3xl font-bold mb-4">Ready to <br /> Begin Your Journey?</h2>
+        <p className="mb-6 text-gray-700">
+          Get in touch with us today and take the first step towards your future success. Our team is here to assist you!
+        </p>
+        <div className="flex items-center mb-3 text-lg text-gray-800 lg:mt-10">
+          <span className="mr-2">📞</span>
+          +91 - XXX-XXXX
+        </div>
+        <div className="flex items-center text-lg text-gray-800">
+          <span className="mr-2">📧</span>
+          northstaracad@nsa.com
+        </div>
+      </div>
+      <div className="md:w-1/2 w-full px-7  rounded-md shadow-md">
+        <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
+          Elevate Your <span className="text-red-600">Career Trajectory</span>
+        </h2>
+        <form className="space-y-3">
+          <input
+            type="text"
+            placeholder="Full Name"
+            className="w-full px-4 py-2 border rounded-md focus:outline-none bg-[#F5F5F5]"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full px-4 py-2 border rounded-md focus:outline-none bg-[#F5F5F5]"
+          />
 
+          <div className="grid grid-cols-2 gap-4">
+            <select className="w-full px-4 py-2 border rounded-md focus:outline-none bg-[#F5F5F5]">
+              <option>Select Course</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Ph. Number"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none bg-[#F5F5F5]"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <select className="w-full px-4 py-2 border rounded-md focus:outline-none bg-[#F5F5F5]">
+              <option>Select Your Type</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Your City Name"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none bg-[#F5F5F5]"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition bg-[#F5F5F5]"
+          >
+            Register for free Webinar
+          </button>
+
+          <p className="text-xs text-gray-500 mb-2">
+            By submitting, I authorize Northstar Academy & its representatives to contact me with updates and
+            notifications via Email/SMS/WhatsApp/Call.
+          </p>
+        </form>
+      </div>
+    </section>
+  );
+}

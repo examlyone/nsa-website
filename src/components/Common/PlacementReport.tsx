@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { PiDownloadSimple } from "react-icons/pi";
 import { Typography } from "./Typography";
 export default function PlacementSection() {

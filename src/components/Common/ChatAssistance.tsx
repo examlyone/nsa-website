@@ -32,14 +32,13 @@ export default function ChatAssistant() {
 
   return (
     <>
-      {/* Floating Button */}
       {!isOpen && (
         <div
           className="fixed bottom-5 right-2 w-12 h-12 rounded-full border-2 border-white shadow-md cursor-pointer overflow-hidden z-50"
           onClick={() => setIsOpen(true)}
         >
           <Image
-            src="/images/chat-asis-logo.png"
+            src="/images/Girl image.png"
             alt="Chat"
             width={50}
             height={50}
@@ -56,7 +55,7 @@ export default function ChatAssistant() {
           <div className="flex items-center justify-between px-4 py-2 border-b bg-white">
             <div className="flex items-center gap-2">
               <Image
-                src="/images/chat-asis-logo.png"
+                src="/images/Chat image.png"
                 alt="Assistant"
                 width={32}
                 height={32}

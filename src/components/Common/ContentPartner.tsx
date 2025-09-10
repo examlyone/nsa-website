@@ -6,10 +6,9 @@ export default function ContentPartnersSection() {
   return (
     <section className="container mx-auto md:mt-12 mt-8 md:px-8 px-4">
       <div className="flex flex-col overflow-hidden md:flex-row items-center md:items-stretch rounded-lg py-6 gap-10 bg-gradient-to-r from-[#FCF8F3] to-[#FDE8E8]">
-        {/* Left - Image */}
         <div className=" md:w-1/2 flex justify-center md:justify-start h-full ">
           <Image
-            src="/images/contentPartner.png"
+            src="/images/ContentPartner.png"
             alt="Content Partners"
             width={500}
             height={500}
@@ -17,7 +16,6 @@ export default function ContentPartnersSection() {
           />
         </div>
 
-        {/* Right - Text */}
         <div className="w-full lg:w-1/2 md:w-full flex flex-col justify-center text-center md:text-left space-y-4 h-full md:px-8 md:py-5 px-4 py-3">
           <Typography
             variant="h2"

@@ -86,7 +86,19 @@
   will-change: transform;
 }
 }
+.animate-marquee6 {
+  display: flex;
+  animation: marquee6 15s linear infinite;
+}
 
+@keyframes marquee6 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 body{
   font-family: "Poppins", sans-serif;
 }

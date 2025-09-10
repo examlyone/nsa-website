@@ -31,7 +31,7 @@ export default function NeedAssistance() {
               ✕
             </button>
 
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4 mt-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-2 mt-2">
               Elevate Your <span className="text-[#d41c1c]">Career Trajectory</span>
             </h2>
 

@@ -9,8 +9,6 @@ export default function HeroPage() {
     { icon: "/images/image 13.png" },
     { icon: "/images/image 15.png" },
     { icon: "/images/Chegg.png" },
-    { icon: "/images/cognizant.png" },
-    { icon: "/images/deloitte.png" },
   ];
 
   return (
@@ -52,6 +50,14 @@ export default function HeroPage() {
               />
             ))}
             {ScrollLogo.map((logo, idx) => (
+              <img
+                key={`dup-${idx}`}
+                src={logo.icon}
+                alt={`logo-${idx}`}
+                className="h-5 sm:h-6 md:h-8 inline-block object-contain"
+              />
+            ))}
+             {ScrollLogo.map((logo, idx) => (
               <img
                 key={`dup-${idx}`}
                 src={logo.icon}

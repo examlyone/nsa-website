@@ -25,19 +25,19 @@ export default function MentorMeet() {
             felicitated with several awards and recognitions, including the &apos;Teaching Excellence Award&apos; in recent times.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-8 mt-8 md:mt-2">
+          <div className="flex flex-col sm:flex-row gap-8 lg:mt-8 md:mt-2 ">
             <div>
-              <h3 className="text-xl md:text-md font-semibold">M.Irfat</h3>
+              <h3 className="text-xl lg:text-2xl md:text-md font-semibold">M.Irfat</h3>
               <p className="text-gray-500 text-sm md:text-base">India&apos;s leading expert</p>
             </div>
 
             <div>
-              <h3 className="text-xl md:text-md font-semibold">25+</h3>
+              <h3 className="text-xl lg:text-22xl md:text-md font-semibold">25+</h3>
               <p className="text-gray-500 text-sm md:text-base">Years of experience</p>
             </div>
 
             <div>
-              <h3 className="text-xl md:text-md font-semibold">Founder&Director</h3>
+              <h3 className="text-xl lg:text-xl md:text-md font-semibold">Founder&Director</h3>
               <p className="text-gray-500 text-sm md:text-base md:whitespace-nowrap">Northstar Academy</p>
             </div>
           </div>

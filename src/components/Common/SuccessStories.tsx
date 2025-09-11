@@ -87,13 +87,11 @@ const stories = [
 
 export default function SuccessStories() {
   return (
-    <section className="container mx-auto px-4 md:px-8 py-12 bg-text-[#F7F7F7]">
-      {/* Heading */}
+    <section className="container mx-auto px-4 md:px-8 py-12 bg-text-[#F7F7F7] bg-[#F7F7F7]">
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-10">
         <span className="bg-gradient-to-r from-[#EC2027] to-[#861216] text-transparent bg-clip-text">Success Stories</span> of Our Alumni
       </h2>
 
-      {/* Stories Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {stories.map((story) => (
           <motion.div

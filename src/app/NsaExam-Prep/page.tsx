@@ -4,14 +4,22 @@ import ChatAssistant from '@/components/Common/ChatAssistance'
  import React from 'react'
 import LmsSection from '@/components/Common/LmsSection'
 import HeroSection from '@/components/NsaExamPrep/Hero-section'
-const page = () => {
+import KeyFeatures from '@/components/NsaExamPrep/KeyFeatures'
+import FAQSection from '@/components/NsaExamPrep/Faq'
+import WhyChooseUs from '@/components/NsaExamPrep/WhyChooseNsa'
+import CallToAction from '@/components/NsaExamPrep/CallToAction'
+    const page = () => {
   return (
     <div>
         <HeroSection/>
+        <KeyFeatures/>
+        <WhyChooseUs/>  
       <SuccessStories/>
       <NeedAssistance/>
       <ChatAssistant/>
-      <LmsSection/> 
+      <LmsSection/>
+      <CallToAction/>
+      <FAQSection/>
           </div>
   )
 }

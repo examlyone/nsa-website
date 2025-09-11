@@ -40,7 +40,7 @@ export default function CPASection() {
       {program.description}
     </p>
 
-    <div className="grid grid-cols-2 gap-x-3  text-gray-700 text-xs sm:text-sm md:text-sm">
+    <div className="grid grid-cols-2 gap-x-3 gap-y-2 text-gray-700 text-xs sm:text-sm md:text-sm">
       {program.details.map((detail, idx) => (
         <div key={idx} className="flex items-center space-x-2">
           <span className="text-red-600 text-sm sm:text-base">

@@ -85,7 +85,7 @@ export default function ContactUs() {
             <div className="flex flex-col gap-2">
               <h4 className="font-bold lg:text-2xl md:text-lg">Open Time</h4>
               <p className="text-black font-normal text-sm">Mon - Sat — 10:00 AM to 8:00 PM</p>
-              <p className="text-black font-normal text-sm">Sun—10:00 AM to 6:30 PM</p>
+              <p className="text-black font-normal text-sm text-end"> Sun —10:00 AM to 6:30 PM</p>
             </div>
 </div>
 <div className="flex lg:flex-row justify-between lg:mt-18 md:flex-col md:items-center">

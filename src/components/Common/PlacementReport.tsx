@@ -2,12 +2,12 @@ import { PiDownloadSimple } from "react-icons/pi";
 import { Typography } from "./Typography";
 export default function PlacementSection() {
   const people = [
-    { img: "PlacementImg/img-1.png" },
-    { img: "PlacementImg/img-2.png" },
-    { img: "PlacementImg/img-3.png" },
-    { img: "PlacementImg/img-4.png" },
-    { img: "PlacementImg/img-5.png" },
-    { img: "PlacementImg/img-3.png" },
+    { img: "/PlacementImg/img-1.png" },
+    { img: "/PlacementImg/img-2.png" },
+    { img: "/PlacementImg/img-3.png" },
+    { img: "/PlacementImg/img-4.png" },
+    { img: "/PlacementImg/img-5.png" },
+    { img: "/PlacementImg/img-3.png" },
 
     // { img: "PlacementImg/img-6.png" },
   ];

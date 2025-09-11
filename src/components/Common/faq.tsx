@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { MdHeadsetMic } from "react-icons/md";
@@ -43,7 +44,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto my-10 sm:px-6 lg:px-8 space-y-4">
+    <div className=" lg:mt-6 mt-4 space-y-4 max-w-4xl mx-auto my-10 sm:px-6 lg:px-8">
       {accordionData.map((item, index) => (
         <div
           key={index}
@@ -71,19 +72,31 @@ export default function FAQ() {
               <FiChevronDown size={24} className="text-gray-600" />
             )}
           </button>
-          {activeIndex === index && (
+          
+          <AnimatePresence initial={false}>
+    {activeIndex === index && (
+        <motion.div
+            key="content"
+            initial={{ opacity: 0, scaleY: 0, transformOrigin: 'top' }}
+            animate={{ opacity: 1, scaleY: 1 }}
+            exit={{ opacity: 0, scaleY: 0 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className="px-5 py-4 text-gray-700 bg-[#F7F7F7] border-t border-gray-300"
+        >
             <div className="pb-4 text-black flex flex-col sm:flex-row gap-4 px-4">
-              {item.image && (
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full sm:w-48 object-cover rounded"
-                />
-              )}
-              <p className="flex-1">{item.content}</p>
+                {item.image && (
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full sm:w-48 object-cover rounded"
+                    />
+                )}
+                <p className="flex-1">{item.content}</p>
             </div>
-          )}
-        </div>
+        </motion.div>
+    )}
+</AnimatePresence>
+          </div>
       ))}
     </div>
   );

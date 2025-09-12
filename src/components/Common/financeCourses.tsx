@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function FinanceCourses() {
+export default function FinanceCourses({ handleCourseClick }: { handleCourseClick: () => void }) {
     const courses = [
         {
             logo: '/images/CPA.png',
@@ -30,39 +30,38 @@ export default function FinanceCourses() {
 
     return (
         <section className="container mx-auto px-4 py-6 ">
-        <div className="mb-8">
-          <h2 className=" mx-auto text-2xl font-semibold text-start">
-            Discover our Finance & Accounting Courses
-          </h2>
-          <hr className="w-3/3 border border-gray-200 mt-4"/>
-        </div>
-      
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center text-center">
-          {courses.map((course, index) => (
-            <Link
-              key={index}
-              href={course.link}
-              className="relative flex flex-col-2 rounded-md items-center bg-white p-3 overflow-hidden transition-transform transform hover:scale-105"
-            >
-              <div className="w-16 h-16  rounded-full">
-                   <img
-                  src={course.logo}
-                  alt={course.title}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-                <div className="flex flex-col px-4">
-              <h3 className="font-semibold text-lg transition-colors">
-                {course.title}
-              </h3>
-      
-              <p className="text-gray-600 text-sm mt-2">{course.description}</p>
-           </div>
-      
-            </Link>
-          ))}
-        </div>
-      </section>
-      
+            <div className="mb-8">
+                <h2 className=" mx-auto text-2xl font-semibold text-start">
+                    Discover our Finance & Accounting Courses
+                </h2>
+                <hr className="w-3/3 border border-gray-200 mt-4"/>
+            </div>
+
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center text-center">
+                {courses.map((course, index) => (
+                    <Link
+                        key={index}
+                        href={course.link}
+                        className="relative flex flex-col-2 rounded-md items-center bg-white p-3 overflow-hidden transition-transform transform hover:scale-105"
+                        onClick={() => handleCourseClick()}
+                    >
+                        <div className="w-16 h-16 rounded-full">
+                            <img
+                                src={course.logo}
+                                alt={course.title}
+                                className="w-full h-full object-contain"
+                            />
+                        </div>
+                        <div className="flex flex-col px-4">
+                            <h3 className="font-semibold text-lg transition-colors">
+                                {course.title}
+                            </h3>
+
+                            <p className="text-gray-600 text-sm mt-2">{course.description}</p>
+                        </div>
+                    </Link>
+                ))}
+            </div>
+        </section>
     )
 }

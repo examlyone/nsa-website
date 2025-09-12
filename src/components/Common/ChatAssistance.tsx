@@ -55,7 +55,7 @@ export default function ChatAssistant() {
           <div className="flex items-center justify-between px-4 py-2 border-b bg-white">
             <div className="flex items-center gap-2">
               <Image
-                src="/images/Chat image.png"
+                src="/images/Girl image.png"
                 alt="Assistant"
                 width={32}
                 height={32}

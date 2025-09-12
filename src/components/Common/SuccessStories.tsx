@@ -136,25 +136,6 @@ export default function SuccessStories() {
               </>
             ) : (
               <div className="relative">
-                <motion.div>
-                  {/* <Image
-                    src={""}
-                    alt={story.name}
-                    width={400}
-                    height={150}
-                    className="rounded-lg object-cover w-full h-48"
-                  /> */}
-                </motion.div>
-                {/* <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-12 w-12 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button> */}
                 <div className="mt-3">
                   <p className="font-semibold text-gray-900">{story.name}</p>
                   <p className="text-gray-500 text-sm">{story.role}</p>
@@ -169,7 +150,7 @@ export default function SuccessStories() {
       <div className="text-center mt-10">
         <motion.button
           whileHover={{ scale: 1.1 }}
-          className=" border bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition hover:bg-white hover:text-black"
+          className=" border bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-black hover:border hover:border-black transition transition-all duration-300 hover:shadow-lg  transform hover:scale-105"
         >
           View All Stories
         </motion.button>

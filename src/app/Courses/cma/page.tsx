@@ -12,11 +12,13 @@ import StudentSuccess from '@/components/Courses/CMA US/StudentSuccess'
 import CMACertification from '@/components/Courses/CMA US/cma-certification'
 import Roadmap from '@/components/Courses/CMA US/Roadmap'
 import CMAIntro from '@/components/Courses/CMA US/cma-course'
+import WhyNorthstar from '@/components/Courses/CMA US/WhyNorthstar'
 const page = () => {
   return (
     <div>
       {/* <HeroSection /> */}
       <PartnerStats/>
+      <WhyNorthstar/>
       <NeedAssistance />    
       <ChatAssistant />
       <CMAIntro/>

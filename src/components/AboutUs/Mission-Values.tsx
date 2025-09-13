@@ -42,7 +42,7 @@ export default function MissionValues() {
             className="rounded-lg md:rounded-md shadow-lg object-cover lg:w-[600px] lg:h-[300px] md:w-[600px] md:h-[300px]"
             priority
           />
-          <h2 className="mt-4 text-xl h-20 md:text-xl lg:text-2xl text-center  font-semibold text-red-500 border border-red-300 rounded-lg p-4 bg-[#FCF3F0] bg-gradient-to-r from-[#EC2027] to-[#861216] text-transparent bg-clip-text">
+          <h2 className="mt-4 text-xl h-20 md:text-xl lg:text-2xl text-center font-semibold text-red-500 border border-red-300 rounded-lg p-4 bg-[#FCF3F0] bg-gradient-to-r from-[#EC2027] to-[#861216] text-transparent bg-clip-text">
             {currentItem.heading}
           </h2>
         </div>
@@ -50,31 +50,38 @@ export default function MissionValues() {
         <div className="text-gray-700 space-y-8 lg:mt-6 md:mt-3 text-center md:text-left">
 
           <p className="text-base md:text-sm leading-relaxed text-justify">
-            <strong>Founded in 2011 as Irfat&apos;s Classes,</strong> NorthStar Academy emerged with a singular vision—to provide the right mentorship and guidance for aspiring finance and accounting professionals.</p>
-            <p className="text-base md:text-sm">Over the years, our in-depth, concept-driven methodology and global partnerships have empowered more than <strong>15,000 + students</strong>. Recognized for excellence, including the 'Best Emerging Educational Institute in Bangalore' by Indo-Global Foundation, NSA remains dedicated to shaping confident professionals.</p>
+            <strong>Founded in 2011 as Irfat&apos;s Classes,</strong> NorthStar Academy emerged with a singular vision—to provide the right mentorship and guidance for aspiring finance and accounting professionals.
+          </p>
 
-          <div className="relative pt-8 border border-gray-300 px-6 rounded-lg lg:mt-15">
-            <div className="absolute top-10 left-8 right-0 h-1 bg-gray-300">
+          <p className="text-base md:text-sm">
+            Over the years, our in-depth, concept-driven methodology and global partnerships have empowered more than <strong>15,000 + students</strong>. Recognized for excellence, including the 'Best Emerging Educational Institute in Bangalore' by Indo-Global Foundation, NSA remains dedicated to shaping confident professionals.
+          </p>
+
+          <div className="relative pt-8 border border-gray-300 px-6 rounded-lg mt-10 lg:mt-30">
+
+            {/* Timeline Progress Bar */}
+            <div className="absolute top-10 left-0 right-0  bg-gray-300">
               <div
-                className="h-1 bg-red-600 transition-all duration-[5000ms] justify-center"
+                className="h-1 bg-red-600 transition-all duration-1000"
                 style={{
-                  width: `${((currentIndex + 1) / timelineData.length) * 100}%`,
+                  width: `${(currentIndex / (timelineData.length - 1)) * 100}%`,
                 }}
               />
             </div>
 
-            <div className="flex justify-between relative z-10">
+            {/* Horizontal Timeline Container */}
+            <div className="flex space-x-12 relative z-10 overflow-x-auto no-scrollbar">
               {timelineData.map((item, index) => (
-
-                <div key={index} className="flex flex-col items-center">
+                <div key={index} className="flex flex-col items-center min-w-[80px]">
                   
                   <div
-                    className={`w-5 h-5 rounded-full transition-all duration-600 justify-start ${
-                      index === currentIndex ? "bg-red-600" : "bg-gray-300"
+                    className={`w-5 h-5 rounded-full transition-colors duration-1000 ${
+                      index <= currentIndex ? "bg-red-600" : "bg-gray-300"
                     }`}
                   />
+
                   <span
-                    className={`mt-2 text-sm ${
+                    className={`mt-2 text-sm whitespace-nowrap ${
                       index === currentIndex
                         ? "font-bold text-red-600"
                         : "text-gray-500"
@@ -85,6 +92,7 @@ export default function MissionValues() {
                 </div>
               ))}
             </div>
+
           </div>
 
         </div>

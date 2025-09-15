@@ -4,8 +4,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const successStories = [
@@ -53,75 +52,82 @@ const successStories = [
 
 export default function SuccessStories() {
   return (
-    <section className="container overflow-hidden  mx-auto px-4 py-12 text-center relative">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">
-        <span className="text-red-500">Success Stories</span> of Our Alumni
-      </h2>
-      <p className="text-gray-600 mb-8">
-        Discover where determination and guidance can take you
-      </p>
+    <section className="relative w-full px-4 py-12 max-w-7xl mx-auto">
+      {/* Section Header */}
+      <div className="text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <span className="text-red-500">Success Stories</span> of Our Alumni
+        </h2>
+        <p className="text-gray-600 mt-2">
+          Discover where determination and guidance can take you
+        </p>
+      </div>
 
-      <button className="swiper-button-prev absolute top-1/2 -left-12 transform -translate-y-1/2 p-3 rounded-full shadow-lg bg-white z-10">
-        <BsChevronLeft className="w-6 h-6 text-gray-800" />
+      {/* Navigation Buttons */}
+      <button className="swiper-button-prev absolute top-1/2 -left-4 transform -translate-y-1/2 z-10 p-3 bg-white rounded-full shadow-md">
+        <BsChevronLeft className="w-5 h-5 text-gray-800" />
+      </button>
+      <button className="swiper-button-next absolute top-1/2 -right-4 transform -translate-y-1/2 z-10 p-3 bg-white rounded-full shadow-md">
+        <BsChevronRight className="w-5 h-5 text-gray-800" />
       </button>
 
-      <button className="swiper-button-next absolute top-1/2 -right-12 transform -translate-y-1/2 p-3 rounded-full shadow-lg bg-white z-10">
-        <BsChevronRight className="w-6 h-6 text-gray-800" />
-      </button>
-
+      {/* Swiper Carousel */}
       <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={30}
+        modules={[Navigation]}
+        spaceBetween={24}
         slidesPerView={1}
-        centeredSlides={true}
-        loop={true}
+        loop
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        // pagination={{ clickable: true }}
         breakpoints={{
-          320: { slidesPerView: 1 },
-          640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        style={{ padding: "0 20px" }}
+        className="py-6"
       >
         {successStories.map((story) => (
-          <SwiperSlide key={story.id}>
-            <div className="bg-white p-3 lg:p-5 md:p-4 border border-gray-200 rounded-lg shadow-lg max-w-[350px] mx-auto text-left">
-              <div className="flex items-center gap-6 mb-4">
+          <SwiperSlide key={story.id} className="flex justify-center">
+            <div className="bg-white border border-gray-200 rounded-xl shadow-lg p-4 lg:px-6 md:px-4 w-full max-w-md text-left">
+              <div className="flex flex-col items-center gap-4 ">
                 <Image
                   src={story.avatar}
                   alt={story.name}
-                  width={120}
-                  height={120}
-                  className="rounded-full mb-6"
+                  width={80}
+                  height={80}
+                  className="rounded-full object-cover w-20 h-20 lg:w-28 lg:h-28 md:w-24 md:h-24"
                 />
-                <div className="flex flex-col">
-                  <h3 className="font-semibold text-lg text-gray-800">{story.name}</h3>
+                <div className="text-center">
+                  <h3 className="font-semibold text-lg text-gray-800">
+                    {story.name}
+                  </h3>
                   <Image
                     src={story.companyLogo}
-                    alt="Company Logo"
+                    alt={`${story.name} company`}
                     width={100}
                     height={40}
-                    className="mb-2"
+                    className="mx-auto  object-contain"
                   />
-                  <div className="flex gap-1 text-yellow-400 text-lg">
-                    {Array(5).fill(0).map((_, index) => (
-                      <span key={index}>★</span>
-                    ))}
+                  <div className="flex justify-center gap-1 text-yellow-400 text-base">
+                    {Array(5)
+                      .fill(0)
+                      .map((_, index) => (
+                        <span key={index}>★</span>
+                      ))}
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm lg:text-base">{story.description}</p>
+              <p className="text-gray-600 text-sm sm:text-base text-center">
+                {story.description}
+              </p>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="mt-8 text-center">
-        <button className="bg-black text-white px-6 py-2 rounded hover:bg-white hover:text-black hover:border hover:border-black transition-all duration-300 hover:shadow-lg transform hover:scale-105">
+
+      <div className="mt-6 text-center">
+        <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-white hover:text-black hover:border hover:border-black transition-all duration-300 transform hover:scale-105">
           View All Stories
         </button>
       </div>

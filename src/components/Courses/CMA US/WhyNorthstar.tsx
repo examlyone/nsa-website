@@ -71,30 +71,31 @@ export default function WhyNorthStar() {
 </div>
 
 
-        {/* Right Side - Cards */}
-        <div className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 ">
-          {reasons.map((reason, index) => (
-            <div
-              key={index}
-              className="flex flex-col sm:flex-row items-center border border-gray-300 rounded-lg p-4 md:p-2 bg-white shadow hover:shadow-lg transition"
-            >
-              <div className="flex-1 text-center sm:text-left lg:p-4 md:p-2">
-                <h3 className="font-semibold text-xs lg:text-base md:text-xs mb-2">{reason.title}</h3>
-                <p className="text-gray-600 text-xs lg:text-sm md:text-[12px]">{reason.description}</p>
-              </div>
+        <div className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+  {reasons.map((reason, index) => (
+    <div
+      key={index}
+      className="flex flex-col border border-gray-300 rounded-lg p-4 md:p-2 bg-white shadow hover:shadow-lg transition"
+    >
+      <div className="flex items-center justify-between w-full mb-2">
+        <h3 className="font-semibold text-xs md:text-sm lg:text-lg flex-1 text-center lg:p-4 sm:text-left">
+          {reason.title}
+        </h3>
+        <Image
+          src={reason.icon}
+          alt={reason.title}
+          width={80}
+          height={80}
+          className="object-contain w-12 h-12 md:w-14 md:h-14 lg:w-20 lg:h-20"
+        />
+      </div>
+      <p className="text-gray-600 text-xs md:text-[12px] lg:text-[16px] p-2 text-center sm:text-left">
+        {reason.description}
+      </p>
+    </div>
+  ))}
+</div>
 
-              <div className="flex justify-center items-center lg:mt-12 md:mt-3 sm:mt-0 w-24 h-24">
-                <Image
-                  src={reason.icon}
-                  alt={reason.title}
-                  width={80}
-                  height={80}
-                  className="object-contain lg:w-20 lg:h-20 md:w-16 h-auto"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

@@ -46,17 +46,17 @@ export default function CMAAdmissionProcess() {
         {processSteps.map((step) => (
           <div key={step.id} className="bg-[#F9F9F9] relative rounded-xl shadow-lg lg:p-6 md:p-2 flex flex-col items-center text-center mt-6">
 
-            <div className="lg:w-32 lg:h-32 md:w-25 md:h-25 rounded-full lg:p-2 md:p-1 absolute bg-white flex items-center justify-around mb-6 top-[-65px] mb-6 rounded-full sm:mt-5">
+            <div className="lg:w-32 lg:h-32 md:w-25 md:h-25 rounded-full lg:p-2 md:p-1 p-1 absolute bg-white flex items-center justify-around mb-6 top-[-65px] mb-6 rounded-full sm:mt-5">
               <Image
                 src={step.icon}
                 alt={`Step ${step.id} Icon`}
                 width={160}
                 height={160}
-                className="object-contain lg:w-[320px] md:w-[150px]"
+                className="object-contain lg:w-[320px] md:w-[150px] w-[100px]"
               />
             </div>
 
-            <h3 className="text-sm lg:text-xl md:text-base md:text-base font-semibold bg-gradient-to-r from-[#EC2027] to-[#861216] bg-clip-text text-transparent lg:mt-18 md:mt-15 mb-4 md:mb-1">
+            <h3 className="text-sm lg:text-xl md:text-base md:text-base font-semibold bg-gradient-to-r from-[#EC2027] to-[#861216] bg-clip-text text-transparent lg:mt-18 md:mt-15 mt-10 mb-4 md:mb-1">
               {step.title}
             </h3>
 

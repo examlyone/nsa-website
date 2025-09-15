@@ -13,23 +13,29 @@ import CMACertification from '@/components/Courses/CMA US/cma-certification'
 import Roadmap from '@/components/Courses/CMA US/Roadmap'
 import CMAIntro from '@/components/Courses/CMA US/cma-course'
 import WhyNorthstar from '@/components/Courses/CMA US/WhyNorthstar'
+import WhyCma from '@/components/Courses/CMA US/WhyCma'
+import CmaFooter from '@/components/Courses/CMA US/common/cmafooter'
+import JustCallAway from '@/components/Courses/CMA US/common/justcallaway'
 const page = () => {
   return (
     <div>
       {/* <HeroSection /> */}
       <PartnerStats/>
-      <WhyNorthstar/>
+      <WhyCma/>
       <NeedAssistance />    
       <ChatAssistant />
       <CMAIntro/>
       <MentorMeet />    
       <Roadmap/>
+      <WhyNorthstar/>
       <PlacementSection/>
       <NsaEcosystem/>
       <StudentSuccess/>
       <CMACertification/>
       <CMAAdmissionProcess/>
       <FAQSection/>
+      <CmaFooter/>
+      <JustCallAway/> 
     </div>
   )
 }

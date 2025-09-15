@@ -34,7 +34,7 @@ export default function ChatAssistant() {
     <>
       {!isOpen && (
         <div
-          className="fixed bottom-5 right-2 w-12 h-12 rounded-full border-2 border-white shadow-md cursor-pointer overflow-hidden z-50"
+          className="fixed bottom-15 right-2 w-12 h-12 rounded-full border-2 border-white shadow-md cursor-pointer overflow-hidden z-50"
           onClick={() => setIsOpen(true)}
         >
           <Image

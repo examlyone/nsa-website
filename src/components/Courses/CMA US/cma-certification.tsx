@@ -7,8 +7,8 @@ export default function CMACertification() {
         <div className='flex flex-col items-center '>
             <div className='flex flex-col items-center'>
             <h1 className='text-xl lg:text-4xl md:text-2xl  font-bold text-center lg:mb-4 md:mb-2 mb-2'>CMA USA <span className='bg-gradient-to-r from-[#EC2027] to-[#861216] bg-clip-text text-transparent'>Certification</span></h1>
-            <p className="text-gray-600 font-semibold mx-auto 
-              text-sm sm:text-base md:text-sm lg:text-md 
+            <p className="text-gray-600 font-medium mx-auto 
+              text-xs sm:text-base md:text-sm lg:text-md 
               px-2 sm:px-4 md:px-6 lg:px-44 
               lg:mb-6 md:mb-4 mb-2 text-center">
   Earn IMA’s CMA credential with NorthStar and gain expertise in financial planning, strategy, and global accounting

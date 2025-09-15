@@ -4,4 +4,6 @@ export const navLinks = [
   { label: "About Us", href: "/Aboutus" },
   { label: "Contact Us", href: "/Contactus" },
   { label: "NSA Exam Prep", href: "/NsaExam-Prep" },
+  { label: "Careers", href: "/Careers" },
+
 ];

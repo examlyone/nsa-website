@@ -77,7 +77,6 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
-
                 <AnimatePresence>
                     {menuOpen && (
                         <motion.div
